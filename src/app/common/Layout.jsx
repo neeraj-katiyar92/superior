@@ -1,11 +1,17 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
+import Header from '../layout/header'
+import Sider from '../layout/sider'
+import Footer from '../layout/footer'
 
 const Layout = ({children}) => {
+  const [siderActive,setSiderActive] = useState(false)
   return (
     <div className='layout'>
-        <div className="nav-bar">nav</div>
-        <div className="content">{children}</div>
-        <div className="footer">footer</div>
+        <header id="header"><Header siderActive={siderActive} setSiderActive={setSiderActive}/></header>
+        <Sider siderActive={siderActive} setSiderActive={setSiderActive}/>
+        {/* <div className="content">{children}</div> */}
+        <footer id='footer'><Footer/></footer> 
     </div>
   )
 }

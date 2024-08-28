@@ -1,0 +1,18 @@
+@import "../../styles/varisbles/colors";
+
+#header{height: 93px; border-bottom: 1px solid $sep-ouline; background-color: #f5f7fb;
+    .container-fluid{width: $liquid; height: 100%; margin-right: auto; margin-left: auto; /* max-width: $box; */
+        .row{display: flex; flex-wrap: wrap; height: 100%; align-items: center;
+            .nav{flex: 0 0 auto; width: 41.66666667%; padding: 0 $fifteen;
+                ul{list-style: none;
+                    li{font-size: 15px;}
+                }
+            }
+            .logo{flex: 0 0 auto; width: 16.66666667%;  padding: 0 $fifteen;}
+            .menu-bar{flex: 0 0 auto; width: 41.66666667%;  padding: 0 $fifteen;}
+            .center{text-align: $center;}
+            .right{text-align: $right; cursor: pointer;}
+            .menuleft{font-size: 30px; line-height: 30px;}
+        }
+    }
+}
