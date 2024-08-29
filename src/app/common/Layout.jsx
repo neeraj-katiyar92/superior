@@ -10,7 +10,7 @@ const Layout = ({children}) => {
     <div className='layout'>
         <header id="header"><Header siderActive={siderActive} setSiderActive={setSiderActive}/></header>
         <Sider siderActive={siderActive} setSiderActive={setSiderActive}/>
-        {/* <div className="content">{children}</div> */}
+        <section className="content">{children}</section> 
         <footer id='footer'><Footer/></footer> 
     </div>
   )

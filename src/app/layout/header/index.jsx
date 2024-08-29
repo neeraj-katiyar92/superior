@@ -17,7 +17,7 @@ const Header = ({siderActive, setSiderActive}) => {
           <div className='logo center'>
             <a href=""><Image src={logo} alt="" /></a>
           </div>
-          <div className='menu-bar right'><span class="menuleft" onClick={()=>setSiderActive(!siderActive)}><CgMenuRight /></span></div>
+          <div className='menu-bar right'><span className="menuleft" onClick={()=>setSiderActive(!siderActive)}><CgMenuRight /></span></div>
         </div>
     </div>
   )
