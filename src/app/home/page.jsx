@@ -1,40 +1,22 @@
-<<<<<<< HEAD
 import React from 'react';
 import Layout from '../common/Layout';
-import Head from 'next/head';
 import './style.scss';
 import Filter from '../component/filter';
 import Card from '../component/card';
 import Getstarted from '../component/get-started';
 import Infusehome from '../component/infusehome';
 import Sellingproperties from '../component/sellingproperties';
-
-
-const HomePage = () => {
-=======
-"use client"
-import React, { useState } from 'react'
-import Layout from '../common/Layout'
-import './style.scss'
-import Filter from '../component/filter'
-import { logo1, logo2, logo3, logo4, logo5, testimonialImage } from '../../../public/images'
-import Image from 'next/image'
-import { MdOutlineStarPurple500 } from "react-icons/md";
+import { logo1, logo2, logo3, logo4, logo5, testimonialImage } from '../../../public/images';
 import { FcGoogle } from "react-icons/fc";
+import { MdOutlineStarPurple500 } from "react-icons/md";
 import { IoStarHalfSharp } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa";
 
-
-
-import Card from '../component/card';
-import Getstarted from '../component/get-started';
-import Infusehome from '../component/infusehome';
-import Sellingproperties from '../component/sellingproperties';
+import Image from 'next/image';
 
 
 const HomePage = () => {
-  const logoImages = [logo1, logo2, logo3, logo4, logo5]
->>>>>>> 946f08d (testimonial)
+  const logoImages = [logo1,logo2,logo3,logo4,logo5]
   return (
     <>
 
@@ -46,43 +28,9 @@ const HomePage = () => {
               <Filter />
             </div>
           </div>
-<<<<<<< HEAD
-        </div>        
+             
       </section>
-
-    <section className='projects'>
-      <div className="superior-container">
-        <div className="grid-view">    
-          <Getstarted />
-          <Card />
-          <Card />
-        </div>
-
-        <div className="grid-view tp-30">    
-          
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
-
-        <div className="grid-view tp-30">    
-          
-          
-          <Sellingproperties />
-          <Infusehome />
-          <Card />
-        </div>
-       
-
-      </div>
-    </section>
-
-
-    </Layout>
-=======
-        </section>
-        <section className='hot-selling'>
+      <section className='hot-selling'>
           <div className="title">
             Hot selling Properties in gurugram
           </div>
@@ -96,6 +44,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+
     <section className='projects'>
       <div className="superior-container">
         <div className="grid-view">    
@@ -123,8 +72,7 @@ const HomePage = () => {
 
       </div>
     </section>
-
-        <div className="testimonial">
+    <div className="testimonial">
           <div className="superior-container">
             <div className="col">
 
@@ -168,9 +116,9 @@ const HomePage = () => {
           </div>
         </div>
 
-      </Layout>
->>>>>>> 946f08d (testimonial)
-    </>
+    </Layout>
+    
+</>
   )
 }
 
