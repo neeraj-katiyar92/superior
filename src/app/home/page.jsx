@@ -26,6 +26,10 @@ import { FaArrowRight } from "react-icons/fa";
 
 
 
+import Card from '../component/card';
+import Getstarted from '../component/get-started';
+import Infusehome from '../component/infusehome';
+import Sellingproperties from '../component/sellingproperties';
 
 
 const HomePage = () => {
@@ -92,6 +96,33 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+    <section className='projects'>
+      <div className="superior-container">
+        <div className="grid-view">    
+          <Getstarted />
+          <Card />
+          <Card />
+        </div>
+
+        <div className="grid-view tp-30">    
+          
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+
+        <div className="grid-view tp-30">    
+          
+          
+          <Sellingproperties />
+          <Infusehome />
+          <Card />
+        </div>
+       
+
+      </div>
+    </section>
 
         <div className="testimonial">
           <div className="superior-container">
