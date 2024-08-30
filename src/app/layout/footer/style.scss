@@ -1,21 +1,66 @@
 
-.superior-container{max-width: 1400px; width: 100%; margin-right: auto; margin-left: auto;}
-.superior-row{display: flex; flex-wrap: wrap;}
-.superior-col-lg-12{flex: 0 0 auto; width: 100%;}                
-#footer{position: relative;
-    .callus{background-color: #1f2733;       
-                .footer-realty{min-height: 290px; display: flex; flex-direction: column; align-items: center; justify-content: center;
-                    .number{font-size: 87px; font-family: "Poppins", sans-serif; color: #1f2733;  -webkit-text-stroke: 1px #565f6c; margin-top: 30px; }
-                }
+
+.superior-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.superior-col-lg-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+#footer {
+    position: relative;
+
+    .callus {
+        background-color: #1f2733;
+
+        .footer-realty {
+            min-height: 290px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .number {
+                font-size: 87px;
+                font-family: "Poppins", sans-serif;
+                color: #1f2733;
+                -webkit-text-stroke: 1px #565f6c;
+                margin-top: 30px;
+            }
+        }
     }
 
-    .reach-us{background-color: #1a202a;
-        .address{font-family: "Poppins", sans-serif; color:#737b87; font-size: 12px; margin: 50px 0; line-height: 20px; text-align: center;}
+    .reach-us {
+        background-color: #1a202a;
+
+        .address {
+            font-family: "Poppins", sans-serif;
+            color: #737b87;
+            font-size: 12px;
+            margin: 50px 0;
+            line-height: 20px;
+            text-align: center;
+        }
     }
 
-    .copyright{background-color: #1f2733;  
-        ul{list-style: none; display: flex; justify-content: space-between; height:100px; align-items: center;
-            li{font-family: "Poppins", sans-serif; font-size: 12px; color:#9098a4;}
+    .copyright {
+        background-color: #1f2733;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+            align-items: center;
+
+            li {
+                font-family: "Poppins", sans-serif;
+                font-size: 12px;
+                color: #9098a4;
+            }
         }
     }
 }

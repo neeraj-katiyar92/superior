@@ -1,4 +1,5 @@
-@import "../styles/varisbles/colors";
+@import "../styles/variables/colors";
+
 .banner-container {
     max-width: 1400px;
     width: 100%;
@@ -15,12 +16,13 @@
     flex: 0 0 auto;
     width: 100%;
 }
+
 .banner {
     min-height: 635px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     .banner-title {
         font-size: 60px;
         font-family: "Poppins", sans-serif;
@@ -30,10 +32,178 @@
         letter-spacing: -3px;
     }
 }
-.hot-selling{
-    height: 132px;
+
+.hot-selling {
+    height: 142px;
     width: 100%;
     border-top: 1px solid $sep-outline;
     border-bottom: 1px solid $sep-outline;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-block: 34px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 82px;
+        height: 7px;
+        background-color: $blue;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -3.5px;
+        border-radius: 10px;
+    }
+
+    .title {
+        top: -32px;
+        width: auto;
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: 1px solid #d0d0d0;
+        display: flex;
+        align-items: center;
+        height: auto;
+        border-radius: 10px;
+        background-color: $white;
+        align-items: center;
+        justify-content: center;
+        font-size: 21px;
+        padding: 16px 20px;
+    }
+
+    .superior-container {
+        .row {
+
+            ul {
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+                width: 100%;
+
+                li {
+                    list-style: none;
+                }
+            }
+        }
+    }
 }
 
+.testimonial {
+    .superior-container {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .col {
+            width: 100%;
+
+            .slag {
+                font-size: 21px;
+                font-weight: 400;
+                text-transform: uppercase;
+            width: 100%;
+
+            }
+
+            .title {
+                font-size: 42px;
+                margin: auto;
+                max-width: 700px;
+                margin-block: 20px;
+                margin-top: 30px;
+                h3{
+                    font-weight: 500;
+                }
+            }
+
+            .review {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .google-icon {
+                    margin-right: 5px;
+                    display: flex;
+                    align-items: center;
+
+                    span {
+
+                        font-size: 12px;
+                        margin-left: 5px;
+                    }
+                }
+
+                .star-icon {
+                    display: flex;
+                    gap: 1px;
+                    align-items: center;
+
+                    svg {
+
+                        color: gold;
+
+                        &:last-child {
+                            color: linear-gradient(red, yellow);
+                        }
+                    }
+
+                    span {
+                        margin-left: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .images-grid{
+                display: grid;
+                margin-top: 6%;
+                grid-template-columns: 305px 60% 20%;
+                gap: 20px;
+                .left{
+                    width: 100%;
+                    text-align: left;
+                    background-color: $light-black;
+                    border-radius: 30px;
+                    padding: 20px;
+                    .tag{
+                        padding-bottom: 10px;
+                        color: $white;
+                        display: flex;
+                        align-items: center;
+                        gap:8px;
+                    }
+                    .visit-superior{
+                        font-size: 11px;
+                        padding-bottom: 10px;
+                        color: $white;
+                    }
+                    .para{
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: #929292;
+                        padding-bottom: 10px;
+                    }
+                    .img{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+                .center{
+                    width: 100%;
+                }
+                .right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
