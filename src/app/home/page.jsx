@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Layout from '../common/Layout'
 import './style.scss'
 import Filter from '../component/filter'
-import Form from '../api/users'
+
 
 const HomePage = () => {
  
@@ -22,7 +22,7 @@ const HomePage = () => {
       <section className='hot-selling'>
 
       </section>
-  <Form/>
+
  
     </Layout>
     </>
