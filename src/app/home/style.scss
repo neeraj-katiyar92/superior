@@ -4,3 +4,7 @@
 .banner{min-height: 635px; display: flex; justify-content: center; align-items: center;
     .banner-title{font-size: 60px; font-family: "Poppins", sans-serif; color: #1f2733; text-align: center; line-height: 72px; letter-spacing: -3px;}
 }
+.projects{
+    .grid-view{display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;}
+    .tp-30{margin-top: 30px;}
+}
