@@ -1,6 +1,6 @@
 @import "../../styles/varisbles/colors";
 
-#header{height: 93px; border-bottom: 1px solid $sep-ouline; background-color: #f5f7fb;
+#header{height: 93px; border-bottom: 1px solid $sep-outline; background-color: #f5f7fb;
     .container-fluid{width: $liquid; height: 100%; margin-right: auto; margin-left: auto; /* max-width: $box; */
         .row{display: flex; flex-wrap: wrap; height: 100%; align-items: center;
             .nav{flex: 0 0 auto; width: 41.66666667%; padding: 0 $fifteen;

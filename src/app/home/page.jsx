@@ -1,10 +1,12 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Layout from '../common/Layout'
-import Head from 'next/head'
 import './style.scss'
 import Filter from '../component/filter'
+import Form from '../api/users'
 
 const HomePage = () => {
+ 
   return (
     <>
   
@@ -17,9 +19,11 @@ const HomePage = () => {
           </div>
         </div>        
       </section>
+      <section className='hot-selling'>
 
-
-
+      </section>
+  <Form/>
+ 
     </Layout>
     </>
   )
