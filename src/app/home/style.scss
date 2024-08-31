@@ -94,6 +94,10 @@
     }
 }
 
+.projects{
+    .grid-view{display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;}
+    .tp-30{margin-top: 30px;}
+}
 .testimonial {
     .superior-container {
         text-align: center;
@@ -160,60 +164,9 @@
                     }
                 }
             }
-            .images-grid{
-                display: grid;
-                margin-top: 6%;
-                grid-template-columns: 305px 60% 20%;
-                gap: 20px;
-                .left{
-                    width: 100%;
-                    text-align: left;
-                    background-color: $light-black;
-                    border-radius: 30px;
-                    padding: 20px;
-                    .tag{
-                        padding-bottom: 10px;
-                        color: $white;
-                        display: flex;
-                        align-items: center;
-                        gap:8px;
-                    }
-                    .visit-superior{
-                        font-size: 11px;
-                        padding-bottom: 10px;
-                        color: $white;
-                    }
-                    .para{
-                        font-size: 20px;
-                        font-weight: bold;
-                        color: #929292;
-                        padding-bottom: 10px;
-                    }
-                    .img{
-                        width: 100%;
-                        img{
-                            width: 100%;
-                            border-radius: 20px;
-                        }
-                    }
-                }
-                .center{
-                    width: 100%;
-                }
-                .right{
-                    width: 100%;
-                }
-            }
+          
         }
     }
 }
-.banner-container{max-width: 1400px; width: 100%; margin-right: auto; margin-left: auto;}
-.banner-row{display: flex; flex-wrap: wrap;}
-.banner-col-lg-12{flex: 0 0 auto; width: 100%;}   
-.banner{min-height: 635px; display: flex; justify-content: center; align-items: center;
-    .banner-title{font-size: 60px; font-family: "Poppins", sans-serif; color: #1f2733; text-align: center; line-height: 72px; letter-spacing: -3px;}
-}
-.projects{
-    .grid-view{display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;}
-    .tp-30{margin-top: 30px;}
-}
+
+

@@ -6,13 +6,13 @@ import Card from '../component/card';
 import Getstarted from '../component/get-started';
 import Infusehome from '../component/infusehome';
 import Sellingproperties from '../component/sellingproperties';
-import { logo1, logo2, logo3, logo4, logo5, testimonialImage } from '../../../public/images';
+import { logo1, logo2, logo3, logo4, logo5 } from '../../../public/images';
 import { FcGoogle } from "react-icons/fc";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { IoStarHalfSharp } from "react-icons/io5";
-import { FaArrowRight } from "react-icons/fa";
 
 import Image from 'next/image';
+import TestimonialCard from '../component/testimonialCard';
 
 
 const HomePage = () => {
@@ -72,7 +72,7 @@ const HomePage = () => {
 
       </div>
     </section>
-    <div className="testimonial">
+    <section className="testimonial">
           <div className="superior-container">
             <div className="col">
 
@@ -100,21 +100,10 @@ const HomePage = () => {
                   <span>566 reviews</span>
                 </div>
               </div>
-              <div className="images-grid">
-                <div className="left">
-                  <div className="tag">Right <FaArrowRight/></div>
-                  <div className="visit-superior">Visit superior - better business</div>
-                  <div className="para">How Just Duo Saved 10 Hrs and Reinvested into Business Growth.</div>
-                  <div className="img">
-                    <Image src={testimonialImage}/>
-                  </div>
-                </div>
-                <div className="center"></div>
-                <div className="right"></div>
-              </div>
+           <TestimonialCard/>
             </div>
           </div>
-        </div>
+        </section>
 
     </Layout>
     
