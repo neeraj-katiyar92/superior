@@ -23,7 +23,7 @@ const Card = () => {
                 {/* back image */}
                 <div className="box-back common-box-style box-bgi-effect">
                     <div className="box-content-wrapper">
-                        <div class="box-content">
+                        <div className="box-content">
                         <div className="phone-icon-black">
                             <IoCallSharp />
                         </div>

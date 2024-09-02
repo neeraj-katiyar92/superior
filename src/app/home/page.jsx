@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../common/Layout';
-import './style.scss';
 import Filter from '../component/filter';
 import Card from '../component/card';
 import Getstarted from '../component/get-started';
@@ -17,6 +16,8 @@ import ChannelPartner from '../component/channelPartner';
 import Career from '../component/career';
 import RequestCallback from '../component/requestCallback';
 
+
+import './style.scss';
 const HomePage = () => {
   const logoImages = [logo1,logo2,logo3,logo4,logo5]
   return (

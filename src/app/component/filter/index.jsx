@@ -9,7 +9,7 @@ const Filter = () => {
             <div className="select">
 
             <button onClick={()=>setActiveSelect(!activeSelect)}>Click</button>
-            <div class={activeSelect ?"chat-active":"chat-outer-box "}>
+            <div className={activeSelect ?"chat-active":"chat-outer-box "}>
                 </div>
             </div>
         </div>
