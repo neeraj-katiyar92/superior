@@ -13,7 +13,8 @@ import { IoStarHalfSharp } from "react-icons/io5";
 
 import Image from 'next/image';
 import TestimonialCard from '../component/testimonialCard';
-
+import ChannelPartner from '../component/channelPartner';
+import Career from '../component/career';
 
 const HomePage = () => {
   const logoImages = [logo1,logo2,logo3,logo4,logo5]
@@ -103,6 +104,23 @@ const HomePage = () => {
            <TestimonialCard/>
             </div>
           </div>
+        </section>
+
+        <section className='channel-partner'>
+              <div className='superior-container'>
+                  <div className='superior-row'>
+                    <ChannelPartner />
+                  </div>
+              </div>
+        </section>
+
+        <section className='career'>
+           <div className="superior-container">
+                <div className="superior-row">
+                    <h2 className='career-title'>Career.</h2>
+                    <Career />
+                </div>
+            </div>     
         </section>
 
     </Layout>

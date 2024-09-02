@@ -1,0 +1,17 @@
+
+.affordable-range{display: flex; align-items: end; justify-content: space-evenly;
+
+    .godrej-industry{width: 215px; height:245px; background-color: #1f2733; border-radius: 30px; display: flex; align-items: center; justify-content: center;}
+    .godrej-agriculture{width: 327px; height:440px; border-radius: 30px;
+        overflow: hidden;
+        img{border-radius: 30px; transition: all 0.5s ease-in-out; 
+            &:hover{-ms-transform: scale(1.1); /* IE 9 */
+                -webkit-transform: scale(1.1); /* Safari 3-8 */}
+        }
+    }
+
+
+
+}
+
+.godrej-appliance{ height:135px; background-color: #1f2733; margin: 0 15px; margin-top: 15px; border-radius: 30px;}

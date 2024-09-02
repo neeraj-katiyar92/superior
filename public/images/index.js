@@ -4,4 +4,8 @@ import logo3 from "./logo/logo3.png"
 import logo4 from "./logo/logo4.png"
 import logo5 from "./logo/logo5.png"
 import testimonialImage from "./testimonial/img.jpg"
-export {logo1,logo2,logo3,logo4,logo5,testimonialImage}
+import m3mproperty from './channel-partner/m3m.jpg'
+import dlfproperty from './channel-partner/dlf.jpg'
+import whitelandLogo from './channel-partner/whiteland-logo.png'
+import godrejvideo from './channel-partner/godrej-video.jpg'
+export {logo1,logo2,logo3,logo4,logo5,testimonialImage, m3mproperty, dlfproperty,whitelandLogo, godrejvideo}
