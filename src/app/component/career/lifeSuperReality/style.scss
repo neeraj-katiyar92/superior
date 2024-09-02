@@ -1,2 +1,20 @@
 
-.LifeSuperReality{background-color: red;}
+.LifeSuperReality{background-color: #9ec2e1; width: 33%; padding: 30px; padding-bottom: 0; border-radius: 25px; position: relative;
+    &::before{content:''; position:absolute; top:0px; right: 0; width: 201px; height: 141px; background-image: url(../../../../../public/images/career/shape.png);}
+
+    .superiorReality-title{font-size: 40px; line-height: 40px; color: #1f2733;}
+    .workCulture{display: flex;
+        .career-desp{width:50%;
+            p{font-size: 15px; line-height: 20px; margin-top: 20px;}
+        }
+        .girl{width: 50%; text-align: center;}
+    }
+
+    .round-circle{
+        color: transparent;
+        position: absolute;
+        bottom: 63px;
+        right: -64px;
+        z-index: 1;
+    }
+}

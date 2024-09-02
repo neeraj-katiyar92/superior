@@ -1,6 +1,6 @@
 import './style.scss'
 import Image from 'next/image';
-import { whitelandLogo, godrejvideo } from '../../../../../public/images';
+import { whitelandLogo, godrejvideo,  godrejapplince } from '../../../../../public/images';
 const GodrejBuilder=()=>{
     return(
         <>
@@ -13,7 +13,7 @@ const GodrejBuilder=()=>{
             </div>
         </div>
         <div className="godrej-appliance">
-            <h2></h2>
+        <Image src={ godrejapplince} />
         </div>
         </>
        

@@ -188,6 +188,11 @@
         font-size: 85px;
         color: #1f2733;
         position: absolute;
-        left: 0;
+        left: -190px;
+        z-index: 1;
     }
+}
+
+.requestCallback{background-color: #e5e5e5; margin-top: 125px; padding: 85px 0; border-top: 1px solid #cabdb1;
+    .callback-title{width: 100%; text-transform: uppercase; letter-spacing: 5px; text-align: center;}
 }

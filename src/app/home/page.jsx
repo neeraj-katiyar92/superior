@@ -15,6 +15,7 @@ import Image from 'next/image';
 import TestimonialCard from '../component/testimonialCard';
 import ChannelPartner from '../component/channelPartner';
 import Career from '../component/career';
+import RequestCallback from '../component/requestCallback';
 
 const HomePage = () => {
   const logoImages = [logo1,logo2,logo3,logo4,logo5]
@@ -117,10 +118,19 @@ const HomePage = () => {
         <section className='career'>
            <div className="superior-container">
                 <div className="superior-row">
-                    <h2 className='career-title'>Career.</h2>
+                    
                     <Career />
                 </div>
             </div>     
+        </section>
+
+        <section className='requestCallback'>
+        <div className="superior-container">
+          <div className="superior-row center">
+              <h2 className='callback-title'>request a Callback</h2>
+              <RequestCallback />
+          </div>
+        </div>  
         </section>
 
     </Layout>

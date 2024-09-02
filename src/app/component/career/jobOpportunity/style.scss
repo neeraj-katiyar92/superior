@@ -1,0 +1,10 @@
+
+.jobopportunity{background-color: #00caa0; width: 38%; border-radius: 25px; padding:30px 45px; position: relative;
+    &::before{content:''; position: absolute; top: 0; left: 0; width:201px; height: 141px; background-image: url(../../../../../public/images/career/shape2.png);}
+    .job-oppurtitle{margin-left: 150px; font-size: 40px; line-height: 40px; color: #1f2733;}
+    .job-list{list-style: none; margin: 15px 0  0  0;
+        li{display: inline-block; 
+            a{ background-color: #dbe8f6; border-radius: 5px; margin: 5px; text-decoration: none; display: block; padding: 10px; color:#312c2c; font-size: 14px;}
+        }
+    }
+}

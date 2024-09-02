@@ -1,0 +1,22 @@
+
+.growProfession{width: 26%; background-color: #bfdbf3; border-radius: 25px; padding: 45px; position: relative;
+    .profession-title{
+        font-size: 33px;
+        line-height: 33px;
+        color: #1f2733;
+    }
+
+    .prioritize {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+
+    .round-circle{
+        color: transparent;
+        position: absolute;
+        bottom: 63px;
+        right: -64px;
+        z-index: 1;
+    }
+}
