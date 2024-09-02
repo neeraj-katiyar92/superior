@@ -235,10 +235,10 @@
 // }
 
 .slick-dots li button:before {
-    font-size: 12px; /* Adjust size if needed */
+    font-size: 12px !important; /* Adjust size if needed */
     color: gray; /* Inactive dot color */
   }
   
   .slick-dots li.slick-active button:before {
-    color: #1e61ff; /* Active dot color */
+    color: #1e61ff !important; /* Active dot color */
   }
