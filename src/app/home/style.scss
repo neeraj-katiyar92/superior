@@ -6,6 +6,9 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    .filter{
+        width: 100%;
+    }
 }
 
 .banner-row {
@@ -36,8 +39,12 @@
         display: none;
       }
       @include media(tabletV){
-        max-width: 720px;
-        display: none;
+        // max-width: 720px;
+        width: 85%;
+        // min-width: 800px;
+        margin: auto;
+        display: block;
+        min-height: 550px;
       }
     .banner-title {
         font-size: 60px;
@@ -46,6 +53,11 @@
         text-align: center;
         line-height: 72px;
         letter-spacing: -3px;
+        @include media(tabletV){
+            font-size: 55px;
+            padding-top: 30px;
+
+        }
     }
 }
 
@@ -219,6 +231,7 @@
 /* career */
 
 .career{margin-top: 175px; min-height: 400px; position: relative;
+    display: none;
     .career-title{
         -webkit-transform:rotate(-90deg);
         -moz-transform:rotate(-90deg);

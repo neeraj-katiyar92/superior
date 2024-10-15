@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import './style.scss';
+
 
 // Custom dropdown options
 const options = [
@@ -64,7 +66,7 @@ const CustomSelect = () => {
   );
 
   return (
-    <div style={{ width: '300px', position: 'relative' }}>
+    <div id='list-tagger' style={{ position: 'relative' }}>
       {/* Input with selected values and cross (remove) buttons */}
       <div
         style={{
@@ -75,7 +77,7 @@ const CustomSelect = () => {
           alignItems: 'center',
           cursor: 'pointer',
           backgroundColor: '#fff',
-          marginLeft:'10px',
+          
           borderRadius:"10px",
           height:"73px"
         }}
