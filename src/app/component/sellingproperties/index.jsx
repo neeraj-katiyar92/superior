@@ -1,7 +1,11 @@
+import Image from 'next/image';
+import { hotsellingcircle } from '../../../../public/images';
+import './style.scss';
+
 const Sellingproperties =()=>{
     return(
-        <div>
-            <h2>selling</h2>
+        <div className='harrison'>
+            <Image src={hotsellingcircle} />
         </div>
     )
 }

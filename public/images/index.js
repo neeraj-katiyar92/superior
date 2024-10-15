@@ -6,10 +6,14 @@ import logo5 from "./logo/logo5.png"
 import testimonialImage from "./testimonial/img.jpg"
 import m3mproperty from './channel-partner/m3m.jpg'
 import dlfproperty from './channel-partner/dlf.jpg'
+import dlfLogo from './channel-partner/dlfLogo.png'
 import whitelandLogo from './channel-partner/whiteland-logo.png'
 import godrejvideo from './channel-partner/godrej-video.jpg'
 import careergirl from './career/career-girl.png'
 import roundcircle from './career/circle.png'
 import godrejapplince from './channel-partner/godrej-applience.png'
+import dlfWhite from './logo/dlf-white.png'
+import hotsellingcircle from '../images/hotselling-circle.png'
+import spokeperson from '../images/spokeperson.png'
 
-export {logo1,logo2,logo3,logo4,logo5,testimonialImage, m3mproperty, dlfproperty,whitelandLogo, godrejvideo, careergirl, roundcircle, godrejapplince}
+export {logo1,logo2,logo3,logo4,logo5,testimonialImage, m3mproperty, dlfproperty,whitelandLogo, godrejvideo, careergirl, roundcircle, godrejapplince, dlfWhite, hotsellingcircle, spokeperson, dlfLogo}

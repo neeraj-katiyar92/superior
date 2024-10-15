@@ -1,0 +1,38 @@
+@import "./styles/variables/_mixins.scss";
+
+body {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.superior-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+
+  @include media(laptopH) {
+    max-width: 1320px;
+  }
+
+  @include media(laptopV) {
+    max-width: 1140px;
+  }
+
+  @include media(tabletH) {
+    max-width: 960px;
+  }
+
+  @include media(tabletV) {
+    max-width: 720px;
+  }
+
+ /*  @include media(mobileH) {
+    background-color: red;
+  }
+
+  @include media(mobileV) {
+    background-color: green;
+  }
+ */
+}

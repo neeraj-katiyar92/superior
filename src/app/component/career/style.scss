@@ -1,2 +1,6 @@
-
-.career-job{width: 100%; display: flex; justify-content: space-between; position: relative;}
+@import "../../styles/variables/mixins";
+.career-job{width: 100%; display: flex; justify-content: space-between; position: relative;
+    @include media(laptopH){
+        width: 90%; margin: 0 auto;
+    }
+}

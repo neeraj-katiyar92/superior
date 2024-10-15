@@ -1,18 +1,85 @@
 @import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
 
-#header{height: 93px; border-bottom: 1px solid $sep-outline; background-color: #f5f7fb;
-    .container-fluid{width: $liquid; height: 100%; margin-right: auto; margin-left: auto; /* max-width: $box; */
-        .row{display: flex; flex-wrap: wrap; height: 100%; align-items: center;
-            .nav{flex: 0 0 auto; width: 41.66666667%; padding: 0 $fifteen;
-                ul{list-style: none;
-                    li{font-size: 15px;}
+#header {
+    height: 93px;
+    border-bottom: 1px solid $sep-outline;
+    background-color: #f5f7fb;
+
+    .container-fluid {
+        width: $liquid;
+        height: 100%;
+        margin-right: auto;
+        margin-left: auto;
+
+        /* max-width: $box; */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            align-items: center;
+
+            .nav {
+                flex: 0 0 auto;
+                width: 41.66666667%;
+                padding: 0 $fifteen;
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        font-size: 15px;
+                    }
+                }
+
+                @include media(laptopH){
+                    width:25%;                    
+                }
+
+                @include media(mobileH) {
+                   display: none;
+                }
+
+            }
+
+            .logo {
+                flex: 0 0 auto;
+                width: 16.66666667%;
+                padding: 0 $fifteen;
+                @include media(laptopH){
+                    width:50%;
+                    
+                }
+                @include media(mobileH) {
+                    width:75%;
+                 }
+            }
+
+            .menu-bar {
+                flex: 0 0 auto;
+                width: 41.66666667%;
+                padding: 0 $fifteen;
+                @include media(laptopH){
+                    width:25%;                    
                 }
             }
-            .logo{flex: 0 0 auto; width: 16.66666667%;  padding: 0 $fifteen;}
-            .menu-bar{flex: 0 0 auto; width: 41.66666667%;  padding: 0 $fifteen;}
-            .center{text-align: $center;}
-            .right{text-align: $right; cursor: pointer;}
-            .menuleft{font-size: 30px; line-height: 30px;}
+
+            .center {
+                text-align: $center;
+                @include media(mobileH) {
+                    text-align: left;
+                 }
+            }
+
+            .right {
+                text-align: $right;
+                cursor: pointer;
+            }
+
+            .menuleft {
+                font-size: 30px;
+                line-height: 30px;
+            }
         }
     }
 }

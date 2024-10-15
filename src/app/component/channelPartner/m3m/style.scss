@@ -1,18 +1,46 @@
-
+@import "../../../styles/variables/mixins";
 .bestunit{
     .bestunit-title{font-size: 44px; font-weight: 700; line-height: 44px;
         span{font-weight: 400;}
-        .bluetxt{color: #336bff; font-weight: 800;}      
+        .bluetxt{color: #336bff; font-weight: 800;}  
+        
+        @include media(laptopH){
+            font-size: 36px;
+            line-height: 44px;
+        }
+
+        @include media(laptopV){
+            font-size: 30px;
+            line-height: 36px;
+        }
 
     }
     .m3m-channelpartner{
         overflow: hidden;
         margin-top: 15px;
         border-radius: 20px;
-        img {width: 100%; border-radius: 20px; transition: all 0.5s ease-in-out;            
-         &:hover{-ms-transform: scale(1.1); /* IE 9 */
-        -webkit-transform: scale(1.1); /* Safari 3-8 */}
+        position: relative;
+            img {width: 100%; border-radius: 20px; transition: all 0.5s ease-in-out;            
+            &:hover{-ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */}
+            
         }
         
     }
+
+    .brand-logo{position: absolute; top: 0px; z-index: 1;  width: 100%;     display: flex;
+        justify-content: end; flex-direction: column;
+        &:before{content:''; position: absolute; top: 0; right: 0; width: 200px; height: 100px;  background-image: url(../../../../../public/images/career/shape.png); z-index: -1;}
+        img{width:125px !important}
+        h6{
+            color: #000;
+            font-size: 30px;
+            text-align: right;
+            padding: 0 30px;
+            font-size: 22px;
+            margin-top: 18px;
+        }
+    }
+
 }
+

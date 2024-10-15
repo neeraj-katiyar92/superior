@@ -1,0 +1,45 @@
+ 
+@mixin media($breakpoint){
+    @if $breakpoint == mobileH{
+        @media (max-width: 767px){
+            @content;
+        }
+        
+    }
+    @if $breakpoint == mobileV{
+        @media (max-width: 575px){
+            @content;
+        }
+    }
+
+     @if $breakpoint == tabletH{
+         @media (max-width: 1199px){
+            @content;
+         }
+    }
+
+    @if $breakpoint == tabletV{
+        @media (max-width: 991px){
+           @content;
+        }
+   }
+
+    @if $breakpoint == laptopV{
+        @media (max-width: 1399px){
+            @content;
+        }
+    }
+
+    @if $breakpoint == laptopH{
+        @media (max-width: 1599px){
+            @content;
+        }
+    }
+
+     /*@if $breakpoint == largeHug{
+        @media (min-width: 1480px){
+            @content;
+        }
+    } */
+   
+ }

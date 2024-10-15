@@ -1,4 +1,5 @@
 @import "../styles/variables/colors";
+@import "../styles/variables/mixins";
 
 .banner-container {
     max-width: 1400px;
@@ -23,6 +24,21 @@
     justify-content: center;
     align-items: center;
 
+    @include media(laptopH){
+        display: none;
+    }
+
+    @include media(laptopV){
+        display: none;
+    }
+
+    @include media(tabletH){
+        display: none;
+      }
+      @include media(tabletV){
+        max-width: 720px;
+        display: none;
+      }
     .banner-title {
         font-size: 60px;
         font-family: "Poppins", sans-serif;
@@ -73,32 +89,45 @@
         justify-content: center;
         font-size: 21px;
         padding: 16px 20px;
+          @include media(mobileH) {
+            width: 420px;
+            text-align: center;
+          }
+          @include media(mobileV) {
+            width: 320px;
+          }
     }
 
-    .superior-container {
-        .row {
-
-            ul {
-                margin-top: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                height: 100%;
-                width: 100%;
-
-                li {
-                    list-style: none;
-                }
-            }
-        }
+    .slick-slider{margin-top: 30px;}
+    
+    @include media(mobileH) {
+      height: 175px;
     }
+
+    :focus-visible{outline: none;}
+
 }
 
-.projects{
+.projects{ margin-top: 80px;
     .grid-view{display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;}
     .tp-30{margin-top: 30px;}
+      @include media(laptopH){
+       
+      }
+
+      @include media(laptopV){
+       
+      }
+
+    @include media(tabletH){
+
+      .grid-view{ grid-template-columns: repeat(3, 1fr); }
+       
+      }
+    
 }
 .testimonial {
+    margin-top: 100px;
     .superior-container {
         text-align: center;
         display: flex;
@@ -109,7 +138,7 @@
             width: 100%;
 
             .slag {
-                font-size: 21px;
+                font-size: 14px;
                 font-weight: 400;
                 text-transform: uppercase;
             width: 100%;
@@ -121,9 +150,16 @@
                 margin: auto;
                 max-width: 700px;
                 margin-block: 20px;
-                margin-top: 30px;
+                margin-top: 15px;
+                line-height: 48px;
                 h3{
                     font-weight: 500;
+
+                }
+
+                @include media(tabletV){
+                  font-size: 28px;
+                  line-height: 36px;
                 }
             }
 
@@ -150,9 +186,7 @@
                     align-items: center;
 
                     svg {
-
                         color: gold;
-
                         &:last-child {
                             color: linear-gradient(red, yellow);
                         }
@@ -167,12 +201,20 @@
           
         }
     }
+
+    
 }
 
 
 /*channel-partner */
 
-.channel-partner{margin-top: 100px;}
+.channel-partner{margin-top: 150px;
+    
+}
+
+.location{margin-top: 100px;
+   
+}
 
 /* career */
 
@@ -191,8 +233,12 @@
         left: -190px;
         z-index: 1;
     }
+
+    
 }
 
 .requestCallback{background-color: #e5e5e5; margin-top: 125px; padding: 85px 0; border-top: 1px solid #cabdb1;
     .callback-title{width: 100%; text-transform: uppercase; letter-spacing: 5px; text-align: center;}
+
+   
 }

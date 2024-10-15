@@ -1,0 +1,36 @@
+@import "../../styles/variables/mixins";
+
+.sale-executive{border: 2px solid #ccc; width: 200px; margin: 0 auto; border-radius: 100px; padding: 20px; display: flex; justify-content: center; align-items: center; position: relative;
+
+    .spokeperson{width: 145px; margin: 0 auto; background-color: #fff; box-shadow: 0 4px 8px rgba(169, 169, 169, 0.8); padding: 10px;
+    
+        .personName{display: block; font-size: 12px; font-weight: 600;
+        span{font-size: 10px;}
+        }
+
+        .solutionfor{display: block; font-size: 12px; line-height: 12px; margin-top: 10px; 
+            span{font-size: 10px;}
+        }
+
+    }
+
+    .callblue {
+        background-color: #1e61ff;
+        position: absolute;
+        width: 64px;
+        height: 80px;
+        bottom: 30px;
+        left: 63px;
+        z-index: -1;
+        border-radius: 30px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        svg{color:#fff; font-size: 24px; margin-bottom: 15px;}
+    }
+
+    @include media(tabletH){
+        display: none;
+      }
+
+}

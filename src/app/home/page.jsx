@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import Layout from '../common/Layout';
 import Filter from '../component/filter';
@@ -15,11 +16,53 @@ import TestimonialCard from '../component/testimonialCard';
 import ChannelPartner from '../component/channelPartner';
 import Career from '../component/career';
 import RequestCallback from '../component/requestCallback';
-
+import Location from '../component/location';
+import CallSolution from '../component/callSolution';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import './style.scss';
+import Slider from 'react-slick/lib/slider';
 const HomePage = () => {
   const logoImages = [logo1,logo2,logo3,logo4,logo5]
+
+  var settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: false,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
     <>
 
@@ -39,11 +82,15 @@ const HomePage = () => {
           </div>
           <div className="superior-container">
             <div className="row">
-
-              <ul>
-                {logoImages?.map((list) => <li><Image src={list} alt={list} /></li>)
-                }
-              </ul>
+            {/* <div className="slider-container"> */}
+      <Slider {...settings}>
+        
+        {logoImages?.map((list) => <div><Image src={list} alt={list} /></div>)}
+        
+        
+      </Slider>
+    {/* </div> */}
+              
             </div>
           </div>
         </section>
@@ -59,7 +106,7 @@ const HomePage = () => {
         <div className="grid-view tp-30">    
           
           <Card />
-          <Card />
+          <CallSolution />
           <Card />
           <Card />
         </div>
@@ -115,6 +162,16 @@ const HomePage = () => {
                   </div>
               </div>
         </section>
+
+
+        <section className='location'>
+              <div className='superior-container'>
+                  <div className='superior-row'>
+                    <Location />
+                  </div>
+              </div>
+        </section>
+
 
         <section className='career'>
            <div className="superior-container">

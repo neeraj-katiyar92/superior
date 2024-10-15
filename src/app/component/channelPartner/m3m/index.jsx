@@ -1,4 +1,4 @@
-import { m3mproperty } from '../../../../../public/images';
+import { m3mproperty, dlfLogo } from '../../../../../public/images';
 import './style.scss'
 import Image from 'next/image';
 
@@ -11,6 +11,10 @@ const BestUnit=()=>{
 
             <div className='m3m-channelpartner'>
                 <Image src={m3mproperty} />
+                    <div className='brand-logo'>
+                        <h6>Channel <br />Partners</h6>
+                        <Image src={dlfLogo} />
+                    </div>
             </div>
 
         </div>
