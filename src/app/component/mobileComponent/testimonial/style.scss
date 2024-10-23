@@ -1,0 +1,49 @@
+@import '../../../styles/variables/mixins';
+
+.m-factAndNumbers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    gap: 30px;
+    margin: 40px 0;
+
+    .left{
+        overflow: hidden;
+    }
+    .right {
+        width: 100%;
+        background-color: #1e61ff;
+        height: 100%;
+        border-radius: 30px;
+        text-align: left;
+        .facts {
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 30px;
+            padding-bottom: 0%;
+        }
+        .number {
+            font-size: 135px;
+            display: flex;
+            align-items: baseline;
+            justify-content: start;
+            color: #fff;
+            margin-top: 10px;
+            padding-left: 20px;
+            span {
+                font-size: 42px;
+            }
+        }
+        p {
+            font-size: 22px;
+            padding:10px  30px;
+            color: #fff;
+        }
+    }
+
+    @include media(mobileV){
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+}

@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { CgMenuRight } from "react-icons/cg";
 
 const Header = ({siderActive, setSiderActive}) => {
+  
   return (
     <div className='container-fluid'>
         <div className="row">

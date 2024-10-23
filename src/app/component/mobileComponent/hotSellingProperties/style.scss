@@ -1,0 +1,12 @@
+
+@import "../../../styles/variables/mixins";
+.m-hotSellingProperty{background-color: #f0f0f0; margin:40px 0; padding: 40px 0; text-align: center;
+
+    @include media(mobileV){
+        margin: 0;
+
+        .slick-slider{margin-top: 30px;}
+
+    }
+
+}

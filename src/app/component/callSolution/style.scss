@@ -12,6 +12,10 @@
             span{font-size: 10px;}
         }
 
+        @include media(mobileH){
+            margin-top: 65px;
+        }  
+
     }
 
     .callblue {
@@ -27,10 +31,22 @@
         align-items: end;
         justify-content: center;
         svg{color:#fff; font-size: 24px; margin-bottom: 15px;}
+        @include media(mobileH){
+            z-index: 0;
+        }  
     }
 
     @include media(tabletH){
         display: none;
       }
+
+      @include media(mobileH){
+        display: block;
+        height:350px;
+      }  
+
+      @include media(mobileV){
+        margin-top: 20px;
+      } 
 
 }

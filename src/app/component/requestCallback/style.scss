@@ -1,5 +1,16 @@
-
+@import "../../styles/variables/mixins";
 .form-container{width: 550px; margin: 0 auto; margin-top: 85px;
+
+
+  @include media(mobileH){
+    width: 100%;
+  }
+
+  @include media(mobileV){
+    width: 100%;
+    margin-top: 0;
+  }
+
     /* animated input */
     .form{
         width:100%;
@@ -13,7 +24,7 @@
         height:100%;
         color:#000;
         padding-top:25px;
-        border:none;
+        border:none; 
         outline:none;
         background-color: transparent;
       }

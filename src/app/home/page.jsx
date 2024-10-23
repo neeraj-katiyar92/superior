@@ -10,7 +10,6 @@ import { logo1, logo2, logo3, logo4, logo5 } from '../../../public/images';
 import { FcGoogle } from "react-icons/fc";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { IoStarHalfSharp } from "react-icons/io5";
-
 import Image from 'next/image';
 import TestimonialCard from '../component/testimonialCard';
 import ChannelPartner from '../component/channelPartner';
@@ -23,6 +22,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 import './style.scss';
 import Slider from 'react-slick/lib/slider';
+import { Head, Html } from 'next/document';
+
+
 const HomePage = () => {
   const logoImages = [logo1,logo2,logo3,logo4,logo5]
 
@@ -65,6 +67,7 @@ const HomePage = () => {
   };
   return (
     <>
+    
 
       <Layout>
         <section className="banner">
@@ -175,8 +178,8 @@ const HomePage = () => {
 
         <section className='career'>
            <div className="superior-container">
-                <div className="superior-row">
-                    
+                <div className="superior-row p-relative">
+                    <h2 className='career-title'>Career.</h2>
                     <Career />
                 </div>
             </div>     

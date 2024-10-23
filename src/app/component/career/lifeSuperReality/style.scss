@@ -1,13 +1,66 @@
-
+@import "../../../styles/variables/mixins";
 .LifeSuperReality{background-color: #9ec2e1; width: 33%; padding: 30px; padding-bottom: 0; border-radius: 25px; position: relative;
-    &::before{content:''; position:absolute; top:0px; right: 0; width: 201px; height: 141px; background-image: url(../../../../../public/images/career/shape.png);}
+    &::before{content:''; position:absolute; top:0px; right: 0; width: 201px; height: 141px; background-image: url(../../../../../public/images/career/shape.png);
+        @include media(laptopV){
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 140px;
+            height:140px;
+        }
+        @include media(tabletH){
+            display: none;
+        }
 
-    .superiorReality-title{font-size: 40px; line-height: 40px; color: #1f2733;}
+        @include media(mobileH){
+            display: block;
+            width: 212px;
+            height:212px;
+        }
+
+        @include media(mobileV){
+            display: none;
+        }
+
+    }
+
+    .superiorReality-title{font-size: 40px; line-height: 40px; color: #1f2733;
+        br{
+            @include media(laptopV){
+               display: none;
+            }
+            @include media(mobileH){
+                display: block;
+             }  
+        }
+        @include media(laptopV){
+            font-size: 30px;
+         } 
+         @include media(mobileH){
+            font-size:40px;
+         } 
+    }
     .workCulture{display: flex;
         .career-desp{width:50%;
-            p{font-size: 15px; line-height: 20px; margin-top: 20px;}
+            p{font-size: 15px; line-height: 20px; margin-top: 20px;
+                @include media(laptopV){
+                    line-height: 24px;
+                 }
+            }
+            @include media(laptopV){
+                width:100%;
+             }
         }
-        .girl{width: 50%; text-align: center;}
+        .girl{width: 50%; text-align: center;
+            @include media(laptopV){
+                display: none;
+            }
+            @include media(mobileH){
+                display: block;
+            }
+            @include media(mobileV){
+                display: none;
+            }
+        }
     }
 
     .round-circle{
@@ -16,5 +69,17 @@
         bottom: 63px;
         right: -64px;
         z-index: 1;
+        @include media(mobileH){
+            display: none;
+        }
     }
+
+    @include media(tabletV){
+        width: 50%;
+    }
+
+    @include media(mobileH){
+        width: 100%;
+    }
+
 }

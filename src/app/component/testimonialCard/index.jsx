@@ -6,6 +6,7 @@ import { testimonialImage } from '../../../../public/images';
 import Image from 'next/image';
 import VideoPlayer from './VideoPlayer';
 import Slider from 'react-slick';
+import { useMediaQuery } from '@/app/useMediaQuery';
 
 
   // Your global styles
@@ -30,7 +31,7 @@ const TestimonialCard = () => {
 //   console.log(settings,"setting")
 // }, [isPlaying])
 
-  
+const isMobile = useMediaQuery("(max-width:767px)")
   return (
     <div className="testimonial-card">
     <div className="left">
@@ -43,6 +44,7 @@ const TestimonialCard = () => {
         <Image src={testimonialImage}/>
       </div>
     </div>
+    {!isMobile &&
     <div className="center">
       
     <Slider {...settings}>
@@ -59,6 +61,7 @@ const TestimonialCard = () => {
       </Slider>
     
       </div>
+    }
     <div className="right">
       <div className="facts">Facts and number</div>
       <div className="number">89 <span>%</span></div>

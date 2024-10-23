@@ -27,17 +27,6 @@
     justify-content: center;
     align-items: center;
 
-    @include media(laptopH){
-        display: none;
-    }
-
-    @include media(laptopV){
-        display: none;
-    }
-
-    @include media(tabletH){
-        display: none;
-      }
       @include media(tabletV){
         // max-width: 720px;
         width: 85%;
@@ -54,7 +43,7 @@
         line-height: 72px;
         letter-spacing: -3px;
         @include media(tabletV){
-            font-size: 55px;
+            font-size: 50px;
             padding-top: 30px;
 
         }
@@ -231,7 +220,6 @@
 /* career */
 
 .career{margin-top: 175px; min-height: 400px; position: relative;
-    display: none;
     .career-title{
         -webkit-transform:rotate(-90deg);
         -moz-transform:rotate(-90deg);
@@ -245,8 +233,23 @@
         position: absolute;
         left: -190px;
         z-index: 1;
+        @include media(laptopH){
+            -webkit-transform:rotate(0);
+            -moz-transform:rotate(0);
+            -o-transform: rotate(0);
+            -ms-transform:rotate(0);
+            transform: rotate(0);
+            position: relative;
+            top: 0;
+            left: 0;
+          }
     }
 
+    .p-relative{position: relative;}
+
+    @include media(laptopH){
+       margin-top: 100px;
+    }
     
 }
 
@@ -255,3 +258,92 @@
 
    
 }
+
+
+.m-testimonial{
+    .slag {
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    .title {
+        font-size: 32px;
+        max-width: 500px;
+        margin-top: 15px;
+        line-height: 48px;
+    }
+    .review {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .google-icon {
+            margin-right: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .star-icon {
+            display: flex;
+            gap: 1px;
+            align-items: center;
+            svg {
+                color: gold;
+            }
+        }
+
+    }
+
+    @include media(mobileV){
+        margin-top: 40px;
+      }
+    
+}
+
+.m-chanelPartner{padding: 40px 0; background-color: #f0f0f0;
+    .grid-view{
+        display: grid;
+        grid-template-columns: 57% 35%;
+        gap: 30px;
+        @include media(mobileV){
+            grid-template-columns: 100% 100%;
+            display: block;
+            padding: 0 15px;
+        }
+    }
+   
+}
+
+.m-career{padding: 40px 0;
+    .mcareer-title{font-size: 72px;}
+   
+}
+
+.m-callback{position: relative;
+    .callbackbg{background-color: #e3e7ed; padding: 50px; border-radius: 15px;
+        @include media(mobileV){
+            padding: 15px;
+        }
+    }
+    .mcallback-title{font-size: 42px; text-align: center; text-transform: capitalize;}
+&:before{content:''; position: absolute; bottom: 0; z-index: -1; left: 0; width: 100%; height: 250px; background-color: #262e38;
+
+   
+
+}
+
+
+}
+
+.m-searchPanel{padding: 100px 0; text-align: center;
+    .slag{font-size: 12px; text-align: center; width: 100%;}
+    .m-propertiesTitle{font-size: 42px;
+        @include media(mobileV){
+            font-size: 32px;
+        }
+    }
+    @include media(mobileV){
+        padding: 50px 0;
+    }
+}
+

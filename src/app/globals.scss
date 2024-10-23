@@ -27,12 +27,12 @@ body {
     max-width: 720px;
   }
 
- /*  @include media(mobileH) {
-    background-color: red;
+ @include media(mobileH) {
+  max-width: 540px;
   }
 
   @include media(mobileV) {
-    background-color: green;
+    max-width: 100%;
   }
- */
+
 }

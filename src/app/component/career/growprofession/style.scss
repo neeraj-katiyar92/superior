@@ -1,9 +1,13 @@
+@import "../../../styles/variables/mixins";
 
 .growProfession{width: 26%; background-color: #bfdbf3; border-radius: 25px; padding: 45px; position: relative;
     .profession-title{
         font-size: 33px;
         line-height: 33px;
         color: #1f2733;
+        @include media(laptopH){
+           font-size: 30px;
+        }
     }
 
     .prioritize {
@@ -19,4 +23,13 @@
         right: -64px;
         z-index: 1;
     }
+
+    @include media(laptopV){
+        width: 33%;
+    }
+
+    @include media(tabletV){
+        display: none;
+    }
+
 }

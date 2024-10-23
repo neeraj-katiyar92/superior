@@ -3,6 +3,10 @@
 .superior-row {
     display: flex;
     flex-wrap: wrap;
+    @include media(mobileV){
+        padding:0 15px;
+    }
+      
 }
 
 .superior-col-lg-12 {
@@ -29,6 +33,13 @@
                 color: #1f2733;
                 -webkit-text-stroke: 1px #565f6c;
                 margin-top: 30px;
+                @include media(mobileH){
+                    font-size: 48px;
+                    color:#fff;
+                }
+                @include media(mobileV){
+                    font-size: 36px;
+                }
             }
         }
     }
@@ -60,8 +71,19 @@
                 font-family: "Poppins", sans-serif;
                 font-size: 12px;
                 color: #9098a4;
+                @include media(mobileV){
+                    margin-top: 10px;
+                }
+            }
+
+            @include media(mobileV){
+                display: block;
+                padding: 15px 0;
+                height: auto;
             }
         }
     }
+
+   
    
 }

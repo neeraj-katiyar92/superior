@@ -13,6 +13,10 @@
   height:350px
 }
 
+@include media(mobileV){
+  height:350px
+}
+
 }
 
     .tooltip {position: absolute; display: inline-block; border-bottom: 1px dotted black; width: 75px;

@@ -1,0 +1,29 @@
+
+@import '../../../styles/variables/mixins';
+.realEstateProperties{ width: 100%; margin-top: 40px;
+
+.by-category{background-color: #1d55f8; list-style: none; display: flex; padding: 15px; border-radius: 10px; width: 90%; margin: 0 auto; position: relative; z-index: 1;
+    li{width: 33%; border-right: 1px solid #7f8db6; font-size: 36px; color:#fff;
+    &:last-child{border-right: none;}
+    span{font-size: 18px;
+        @include media(mobileV){
+            font-size: 14px;
+        }
+    }
+    @include media(mobileV){
+        font-size: 18px;
+    }
+    }
+}
+
+.builder-flat{border: 1px solid #ccc; border-radius: 10px; padding:100px 0 100px 0; margin-top: -50px; position: relative; z-index: 0;
+    .flat-search{width: 400px; padding: 15px; border: none; border-bottom: 1px solid #ccc; background-color: transparent; font-size: 16px;
+    
+        @include media(mobileV){
+            width:275px;
+        }
+
+    }
+}
+
+}
